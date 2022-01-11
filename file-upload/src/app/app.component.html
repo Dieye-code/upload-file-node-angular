@@ -1,0 +1,13 @@
+<form class="form m-5">
+  <div class="form-group">
+    <label for="nom" class="control-labem">Nom</label>
+    <input type="text" name="name" [(ngModel)]="name" id="name" class="form-control">
+  </div>
+  <div class="form-group mt-3">
+    <label for="nom" class="control-labem">file</label>
+    <input type="file" name="file" multiple id="file" (change)="fileChange($event)" class="form-control">
+  </div>
+  <div class="form-group mt-3">
+    <div class="btn btn-primary" (click)="upload()">Ajouter</div>
+  </div>
+</form>
